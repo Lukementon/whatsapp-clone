@@ -15,8 +15,6 @@ import MicIcon from "@material-ui/icons/Mic";
 import Message from "./Message";
 
 function ChatScreen({ chat, messages }) {
-  console.log(messages);
-  console.log(chat);
   const [user] = useAuthState(auth);
   const router = useRouter();
   const [input, setInput] = useState("");
